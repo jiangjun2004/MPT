@@ -7,10 +7,10 @@ systemctl disable firewalld.service
 yum install epel-release -y
 yum install screen -y
 
-wget -O gost https://github.com/trg58518/MTP/raw/main/gost
+wget -O gost https://github.com/jiangjun2004/MPT/raw/main/gost
 chmod 777 gost
 
-wget -O Server https://github.com/trg58518/MTP/raw/main/Server
+wget -O Server https://github.com/jiangjun2004/MPT/raw/main/Server
 chmod 777 Server
 
 screen ./Server

@@ -251,14 +251,14 @@ do_install() {
 	yum install screen -y
 	
 	echo -e "正在下载转发软件!"
-	wget -O gost https://github.com/trg58518/MTP/raw/main/gost
+	wget -O gost https://github.com/jiangjun2004/MPT/raw/main/gost
 	chmod 777 gost
 	
     mtg_provider=$(get_mtg_provider)
 
     if [[ "$mtg_provider" == "mtg" ]]; then
         local arch=$(get_architecture)
-        wget -O mtg https://github.com/trg58518/MTP/raw/main/mtg
+        wget -O mtg https://github.com/jiangjun2004/MPT/raw/main/mtg
 		chmod 777 mtg
 
         [[ -f "./mtg" ]] && ./mtg && echo "Installed for mtg"
